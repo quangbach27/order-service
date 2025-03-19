@@ -1,4 +1,4 @@
-package com.polarbookshop.orderservice.order;
+package com.polarbookshop.orderservice.order.domain;
 
 import com.polarbookshop.orderservice.config.DataConfig;
 import com.polarbookshop.orderservice.domain.OrderRepository;
