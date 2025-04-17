@@ -1,6 +1,8 @@
 server:
   port: 9002
+
   shutdown: graceful
+
   netty:
     connection-timeout: 2s
     idle-timeout: 15s
@@ -8,8 +10,10 @@ server:
 spring:
   application:
     name: order_service
+
   lifecycle:
     timeout-per-shutdown-phase: 15s
+
   r2dbc:
     username: user
     password: password
@@ -18,12 +22,14 @@ spring:
       max-create-connection-time: 2s
       initial-size: 5
       max-size: 10
+
   cloud:
     stream:
       bindings:
         dispatchOrder-in-0:
           destination: order-dispatched
           group: {spring.application.name}
+
   rabbitmq:
     host: localhost
     port: 5672
