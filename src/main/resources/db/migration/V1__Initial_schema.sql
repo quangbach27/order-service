@@ -1,4 +1,4 @@
-CREATE TABLE order (
+CREATE TABLE orders (
     id BIGSERIAL PRIMARY KEY  NOT NULL,
     book_isbn           varchar(255) NOT NULL,
     book_name           varchar(255),
